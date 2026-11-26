@@ -1,0 +1,18 @@
+CONSTRUIRE L'APK DE L'ACTU TECH (sans rien installer sur ton PC)
+
+1. Crée un compte gratuit sur github.com, puis un nouveau dépôt "lactu-tech" (privé conseillé).
+2. Dans le dépôt : "Add file" > "Upload files". Envoie TOUT le contenu de ce dossier
+   (package.json, capacitor.config.json, dossier www, dossier .github, .gitignore).
+   Astuce : si le dossier .github n'apparaît pas, crée le fichier à la main :
+   "Add file" > "Create new file" > nom : .github/workflows/apk.yml et colle son contenu.
+3. Onglet "Actions" : la construction démarre seule (5 à 10 minutes).
+4. Quand elle est verte, ouvre-la, descends à "Artifacts" et télécharge "lactu-tech-apk".
+   Décompresse : tu obtiens app-debug.apk.
+5. Envoie l'APK sur ton téléphone Android, ouvre-le et autorise "installer depuis cette source".
+   Si Play Protect avertit, choisis "Installer quand même" (l'APK est signé en mode test).
+
+Dans l'APK : à 20h00 chaque soir, une notification "Rapport du soir" s'affiche. Appuie dessus :
+le rapport s'ouvre, puis "Ouvrir WhatsApp" pour l'envoyer.
+
+Sauvegarde : les données restent dans l'application. Exporte le JSON régulièrement
+(onglet Données, copie le texte et garde-le dans WhatsApp ou une note).
